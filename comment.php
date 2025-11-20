@@ -64,7 +64,9 @@
 
     // Show all comments
     echo "<h2>Comments</h2>";
-    $result = $conn->query("SELECT * FROM comments ORDER BY date DESC");
+    // $result = $conn->query("SELECT * FROM comments ORDER BY date DESC");
+    $sql = ("SELECT * FROM comments ORDER BY date DESC");
+
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
