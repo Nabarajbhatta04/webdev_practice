@@ -45,7 +45,7 @@
 
     <?php
     // Connect to database
-    $conn = new mysqli("localhost", "root", "", "website_meme");
+    include "databaseConnection.php";
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
