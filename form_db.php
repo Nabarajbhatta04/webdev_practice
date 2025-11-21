@@ -27,6 +27,26 @@
         </select>
     </form>
 
+    <?php
+    include "databaseConnection.php";
+
+    $sql = "create table introduction (
+                                      id INT PRIMARY KEY AUTO_INCREMENT,
+                                      name VARCHAR(20),
+                                      address  VARCHAR(30),
+                                      number INT,
+                                      email VARCHAR(40),
+                                      gender VARCHAR(20),
+                                      hobbies VARCHAR(40)
+                                    )";
+    if ($sql) {
+        echo "data inserted successfully!";
+    }
+
+    //     $insert= "insert into introduction (name,address,number,email,gender,hobbies) values
+    //                                         ()"
+    ?>
+
 </body>
 
 </html>
