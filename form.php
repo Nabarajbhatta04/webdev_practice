@@ -56,6 +56,9 @@
         echo "connection successfully!";
     }
 
+    // display the data on the screen from database
+    
+
 
 
 

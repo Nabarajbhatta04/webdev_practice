@@ -71,8 +71,10 @@
         } else {
             echo "Insert failed: " . mysqli_error($conn);
         }
-
     }
+
+
+
 
 
 
